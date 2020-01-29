@@ -1,0 +1,33 @@
+#page_home {
+	padding-top: 100px;
+	background: #acf;
+}
+
+#buttonbox {
+	display: flex;
+	justify-content: center;
+}
+
+#buttonbox button {
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	border: 2px solid rgba(0,0,0,1);
+	margin: 0 10px;
+}
+
+#btn_signup {
+	background-image: linear-gradient(#fda, #ca7);
+}
+
+#btn_signup:hover {
+	background-image: linear-gradient(#fed, #dcb);
+}
+
+#btn_login {
+	background-image: linear-gradient(#afa, #7c7);
+}
+
+#btn_login:hover {
+	background-image: linear-gradient(#efe, #cdc);
+}

@@ -1,0 +1,175 @@
+#page_notes {
+	background: url(../assets/bg.jpg);
+}
+#notepanel {
+	display: flex;
+	width: 60%;
+	margin: 10px auto 20px;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+#note_template {
+	display: none;
+}
+
+/* notes */
+.noteframe {
+	position: relative;
+	width: 23%;
+	margin: 1%;
+}
+.notebox {
+	position: relative;
+	padding: 10px 15px;
+	border: 2px solid #dcb;
+	border-radius: .5rem;
+	background: #fff;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, .2);
+}
+.note_title {
+	font-weight: bold;
+	font-size: 20px;
+}
+.note_datedue {
+	color: #777;
+	font-size: 12px;
+	padding: 5px 0 5px;
+	border-bottom: 1px #aaa dashed;
+}
+.note_content {
+	font-size: 14px;
+	padding-top: 8px;
+}
+.note_content p {
+	margin: 0;
+}
+
+/* action bar */
+.notemenu {
+	display: flex;
+    flex-direction: column;
+	position: absolute;
+    top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: .5rem;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+	padding: 5px;
+}
+.note_datecreated, .note_datemodified {
+	color: #FFF;
+	font-size: 12px;
+	padding: 2px 5px;
+}
+.note_menustuffing {
+    flex: 1;
+}
+.note_menubuttons {
+	display: flex;
+    justify-content: space-around;
+}
+.note_menubuttons a {
+    cursor: pointer;
+    font-weight: bold;
+    color: #FFF !important;
+}
+.note_edit:hover {
+    color: #5CF !important;
+}
+.note_delete:hover {
+    color: #F55 !important;
+}
+
+/* new note clickable */
+#note_create {
+    align-self: stretch;
+}
+.notebox_create {
+	border: 2px dashed #000;
+	background: transparent;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+    cursor: pointer;
+}
+.notebox_create:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+/* editor */
+#editorbox {
+	visibility: hidden;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#editor {
+	width: 500px;
+	height: 600px;
+	border: 2px solid #dcb;
+	border-radius: .5rem;
+	background: #fff;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, .2);
+    padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.editor_label {
+	padding: 25px 0 5px;
+	font-size: 12px;
+}
+.editor_label:first-child {
+	padding-top: 10px;
+}
+#editor_date select {
+    border-radius: .25rem;
+    border: 1px solid #DDD;
+    font-size: 14px;
+}
+#editor_hour {
+	margin-left: 10px;
+}
+.editor_coloroption {
+	display: inline-block;
+    width: 20px;
+	height: 20px;
+	margin: 0 2px;
+	border-radius: .25rem;
+	border: 1px solid #CCC;
+	cursor: pointer;
+}
+.editor_selectedcolor {
+	box-shadow: 0 0 1px 1px #008;
+}
+#editor_content {
+	flex: 1;
+}
+#editor_content textarea {
+    height: 100%;
+    resize: none;
+}
+#editor button {
+	width: 150px;
+	height: 40px;
+	margin: 10px auto 0;
+	border: 1px solid #aaa;
+	border-radius: .5rem;
+	background: #fff;
+}
+#editor button:hover {
+	border-color: #000;
+	background: #eee;
+}

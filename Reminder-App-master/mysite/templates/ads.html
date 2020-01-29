@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        margin: 0;
+    }
+    iframe {
+        border: 3px solid #000;
+    }
+    #close {
+        visibility: hidden;
+        position: absolute;
+        top: 5px;
+        left: 140px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        color: #FFF;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #close:hover {
+        color: #F00;
+    }
+</style>
+</head>
+<body>
+    <a id="close" onclick="parent.postMessage('','*')">X</a>
+	<script type="text/javascript">
+        atOptions = {
+            'key' : 'a0471e3e6bbc6f6aa1c341ca2a66d95d',
+            'format' : 'iframe',
+            'height' : 300,
+            'width' : 160,
+            'params' : {}
+        };
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bcloudhost.com/a0471e3e6bbc6f6aa1c341ca2a66d95d/invoke.js"></scr' + 'ipt>');
+        setTimeout(showClose, 0);
+        function showClose()
+        {
+            if (document.getElementsByTagName('iframe').length > 0)
+                document.getElementById('close').style.visibility = 'visible';
+            else
+                setTimeout(showClose, 100);
+        }
+    </script>
+</body>
+</html>

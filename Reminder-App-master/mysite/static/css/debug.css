@@ -1,0 +1,39 @@
+#page_debug #debugbox {
+	margin: 30px 0;
+	padding: 0 10%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+#page_debug .dbg_col {
+	display: inline-block;
+	width: 40%;
+}
+#page_debug input {
+	display: inline-block;
+	width: 50%;
+}
+#page_debug #dbg_path {
+	width: 100%;
+}
+#page_debug .dbg_desc {
+	font-weight: bold;
+}
+#page_debug .form_row {
+	display: flex;
+	justify-content: space-between;
+}
+#page_debug button {
+	width: 50%;
+	height: 50px;
+	margin-top: 10px;
+}
+#page_debug .dbg_right {
+	display: flex;
+	flex-direction: column;
+}
+#page_debug #dbg_response {
+	width: 100%;
+	resize: none;
+	flex: 1;
+}

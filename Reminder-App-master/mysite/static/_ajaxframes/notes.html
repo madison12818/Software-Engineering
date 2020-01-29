@@ -1,0 +1,46 @@
+<div id="page_notes" class="page">
+	<div id="notepanel">
+		<div id="note_create" class="noteframe">
+			<div class="notebox notebox_create">New Note</div>
+		</div>
+		<div id="note_template" class="noteframe">
+			<div class="notebox">
+				<div class="note_title">Title</div>
+				<div class="note_datedue">Oct.5 2019</div>
+				<div class="note_content"></div>
+			</div>
+            <div class="notemenu">
+                <div class="note_datecreated"></div>
+                <div class="note_datemodified"></div>
+                <div class="note_menustuffing"></div>
+                <div class="note_menubuttons">
+                    <a class="note_edit">Edit</a>
+                    <a class="note_delete">Delete</a>
+                </div>
+            </div>
+		</div>
+	</div>
+    <div id="editorbox">
+        <div id="editor">
+            <div class="editor_label">Title:</div>
+            <div id="editor_title"><input type="text" class="form-control" name="title" /></div>
+            <div class="editor_label">Due Time:</div>
+            <div id="editor_date">
+                <select id="editor_month"></select>
+                <select id="editor_day"></select>
+                <select id="editor_year"></select>
+                <select id="editor_hour"></select>
+                <select id="editor_minute"></select>
+                <!--
+                <select id="editor_second"></select>
+                -->
+            </div>
+            <div class="editor_label">Color Tag:</div>
+            <div id="editor_color"></div>
+            <div class="editor_label">Comment:</div>
+            <div id="editor_content"><textarea  type="text" class="form-control" name="content" /></div>
+            <button id="editorbtn_post" >Post</button>
+            <button id="editorbtn_save" >Save</button>
+        </div>
+    </div>
+</div>
